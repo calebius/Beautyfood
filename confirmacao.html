@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Compra</title>
+    <link rel="stylesheet" href="assets\css\confirmacao.css">
+    <link rel="icon" href="img/pngwing.com.png">
+    <style>
+        .container {
+            display: flex;
+        }
+        #informacaoAdicionalPix {
+            display: none; /* Inicia oculto */
+            width: 50%;
+            text-align: right;
+        }
+        .total-compra-container {
+            display: flex;
+            align-items: center;
+        }
+        #TotalCompra {
+            margin-right: 10px; /* Ajusta a margem entre o total e o botão */
+        }
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            #informacaoAdicionalPix {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <h1 id="logo">BEAUTYFOOD</h1>
+            <br>
+            <br>
+            <p>Nota Fiscal</p> 
+        </div>
+    </section>
+
+    <div class="compra">
+        <h1>Confirmação da Compra</h1>
+    </div>
+
+    <div class="container">
+        <!-- Informações do Pedido à Esquerda -->
+        <div>
+            <h2>Detalhes da Compra</h2>
+            <span id="nomePessoa"></span><br>
+            <span id="emailPessoa"></span><br>
+            <span id="cepPessoa"></span><br>
+
+            <section>
+                <ul id="itensComprados">
+                    <li>Resumo da compra:</li>
+                </ul>
+                <div class="total-compra-container">
+                    <p><span id="TotalCompra">0</span></p> 
+                    <button onclick="mostrarInformacaoPix()" 
+style="top: 10px" >Comprar</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Informações de PIX à Direita -->
+        <div id="informacaoAdicionalPix">
+            <section id="header1">
+                <div class="pix">
+                    <h2>Forma de pagamento</h2>
+                    <img src="img/chavepix1.jpg" style="width: 200px; height: 200px;">
+                    <p>Apenas PIX: (84) 9951-5961</p>
+                </div>
+            </section>
+        </div>
+    </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+    <script src="confirmacao.js"></script>
+
+    <script>
+        function mostrarInformacaoPix() {
+            var informacaoAdicionalPix = document.getElementById("informacaoAdicionalPix");
+            informacaoAdicionalPix.style.display = "block"; // Mostra as informações de PIX
+        }
+    </script>
+</body>
+</html>

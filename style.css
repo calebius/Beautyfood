@@ -1,0 +1,50 @@
+body {
+    font-family: "Source Sans Pro";
+    margin: 0;
+    padding: 0;
+    background-color: #ed786a;
+    color: rgb(247, 140, 102);
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: center;
+    margin-bottom: 600px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #ed786a;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    float: right;
+    margin-bottom: 15px;
+  }
+  
+  button:hover {
+    background-color: #d05f53;
+  }
+  
+  .result {
+    margin-top: 20px;
+  }
